@@ -12,8 +12,7 @@ from sklearn.utils import shuffle
 #one is newer
 #two is older
 #three is PS4 controller
-data_version = '2'
-image_path = './data-' + data_version + '/IMG/'
+image_path = './TrainingData_Final/IMG/'
 angle_adjustment = 0.1
 
 total_left_angles = 0
@@ -25,7 +24,7 @@ total_straight_angles = 0
 #three is PS4 controller
 images = []
 angles = []
-with open('./data-' + data_version + '/driving_log.csv') as csvfile:
+with open('./TrainingData_Final/driving_log.csv') as csvfile:
     reader = csv.reader(csvfile)
     for line in reader:
         center_image = cv2.imread(image_path + line[0].split('/')[-1])
