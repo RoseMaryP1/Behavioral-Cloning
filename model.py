@@ -139,4 +139,4 @@ model.summary()
 model.compile(loss='mse', optimizer='adam', metrics=['accuracy'])
 model.fit(X_train, y_train, validation_data = (X_val, y_val), nb_epoch=10, shuffle=True) #, shuffle=True, validation_split=0.1
 
-model.save('model-' + data_version + '.h5')
+model.save('model_1.h5')
